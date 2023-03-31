@@ -18,19 +18,19 @@ button.addEventListener('mouseenter', (event) => {
 
 
 navLInk.forEach(link => {
-    link.addEventListener("click", (e)=> {
-        e.preventDefault()
+    link.addEventListener("click", (event)=> {
+        event.preventDefault()
     })
 })
 
 
-document.addEventListener("dblclick", (e)=> {
-    e.target.style.color = "pink"
+document.addEventListener("dblclick", (event)=> {
+    event.target.style.color = "pink"
     })
 
 
-document.addEventListener("keydown", (e)=> {
-alert(e.key)
+document.addEventListener("keydown", (event)=> {
+alert(event.key)
 })
 
 
@@ -44,8 +44,8 @@ window.addEventListener("resize", ()=> {
 })
 
 
-document.addEventListener("select", (e)=> {
-e.target.style.color = "purple"
+document.addEventListener("select", (event)=> {
+event.target.style.color = "purple"
 })
 
 
