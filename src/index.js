@@ -4,10 +4,17 @@ import './less/index.less'
 
 const headerNav = document.querySelector(".nav")
 const navLInk = document.querySelectorAll(".nav a")
+const button = document.querySelector(".btn")
 
 headerNav.addEventListener("mouseover", (event)=> {
     event.target.style.color = "blue"
 })
+
+
+button.addEventListener('mouseenter', (event) => {
+    console.log(`changing container background color`)
+    event.target.style.backgroundColor = 'yellow'});
+  
 
 
 navLInk.forEach(link => {
